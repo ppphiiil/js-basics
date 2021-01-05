@@ -1,10 +1,3 @@
-console.log("hello world");
-
-const firstName = "phil";
-const lastName = "moser";
-
-console.log(`hello ${firstName} ${lastName}`);
-
 // Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI =
 // mass / height ** 2
 // or
@@ -28,13 +21,19 @@ const heightJohn2 = 1.95;
 // Calculate the BMI and store  in variables
 let bmiMark = massMark / heightMark ** 2;
 let bmiJohn = massJohn / heightJohn ** 2;
-// Console log the results
 
+// Console log the results
 console.log("bmiMark: " + bmiMark)
 console.log("bmiJohn: " + bmiJohn)
+
 // Console.log if Mark has a higher BMI than John
 if (bmiMark >= bmiJohn) {
-    console.log("bmiMark ist größer: ")
+    console.log("bmiMark ist größer")
 } else {
-    console.log("bmiJohn ist größer: ")
+    console.log("bmiJohn ist größer")
 }
+
+// Second Version
+
+const markHigher = bmiMark > bmiJohn;
+console.log(bmiMark, bmiJohn, markHigher);
